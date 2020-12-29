@@ -3,6 +3,8 @@ Micro Displays for Raspberry Pi
 ## Why?
 _**I'm super bored in lockdown.**_ Add a Raspberry Pi 400 and a few tiny displays I bought for a couple of quid...
 
+The top half of the micro display shows the full screen and the bottom half is a zoom centered around the mouse cursor.
+
 ![ISP 240x240](./main240x240-1.png)
 
 ## IPS 240x240
