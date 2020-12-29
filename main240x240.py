@@ -19,8 +19,7 @@ import pyscreenshot as ImageGrab
 import hashlib
 import numpy as np
 
-from PIL import Image
-from PIL import ImageDraw
+from PIL import Image, ImageDraw
 from Xlib import display
 
 SPI_SPEED_HZ = 16000000
@@ -31,7 +30,7 @@ SCL_GPIO = 11 # SCLK
 SDA_GPIO = 10 # MOSI
 RES_GPIO = 25
 DC_GPIO = 24
-CS_GPIO = 8
+CS_GPIO = 8 # irrelevant if the display lacks CS
 #BLK => not connected
 
 dataControlPin = None
