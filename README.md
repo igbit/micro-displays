@@ -1,5 +1,7 @@
 # micro-displays
 Micro Displays for Raspberry Pi 
+## Why?
+_**I'm super bored in lockdown.**_ Add a Raspberry Pi 400 and a few tiny displays I bought for a couple of quid...
 
 ## IPS 240x240
 
