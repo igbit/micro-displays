@@ -78,12 +78,10 @@ and add the following lines to /home/pi/.config/lxsession/LXDE-pi/autostart
 https://cdn.shopify.com/s/files/1/2386/9605/files/st7789v-lcd-controller-73f8bc3e.pdf?4396108893874243991
 https://www.waveshare.com/wiki/File:ST7789_Datasheet.pdf
 
-![ISP 240x240](./main240x240-3.png)
-![ISP 240x240](./main240x240-6.png)
+![ISP 240x240](./main240x240-3.png) ![ISP 240x240](./main240x240-6.png)
 
 * 0.96" 80x160 IPS / ST7735 Datasheet - same, google: https://www.displayfuture.com/Display/datasheet/controller/ST7735.pdf
-![ISP 80x160](./main80x160-1.png)
-![ISP 80x160](./main80x160-4.png)
+![ISP 80x160](./main80x160-1.png) ![ISP 80x160](./main80x160-4.png)
 
 
 ### Discussion in HackerNews
