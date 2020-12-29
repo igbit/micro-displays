@@ -12,9 +12,7 @@ Example of code editing using this set up :-)
 ![ISP 240x240](./main240x240-2.png)
 
 ## IPS 240x240
-
-**Note:** A question came up in HN about being able to control multiple tiny displays. I'm pasting my reply here as well as this may influence the type of display you want to buy for any similar projects. You should be able to control multiple SPI devices at the same time, but that requires the CSX/CS ("Chip Select") pin to be present. The 240x240 displays I bought don't seem to have this feature, but someone found a non-trivial hack to enable it: https://www.instructables.com/Adding-CS-Pin-to-13-LCD/
-
+***Important Note: A question came up in HN about being able to control multiple tiny displays. I'm pasting my reply here as well as this may influence the type of display you want to buy for similar projects. You should be able to control multiple SPI devices at the same time but that requires the CSX/CS ("Chip Select") pin to be present. The 240x240 displays I bought don't seem to have this feature (though someone found a non-trivial hack to enable them: https://www.instructables.com/Adding-CS-Pin-to-13-LCD/)***
 ### Dependencies
 
 Requires a couple of python libs:
@@ -59,7 +57,7 @@ To enable at session startup on reboot:
 pi@raspberrypi:~ $ cp /etc/xdg/lxsession/LXDE-pi/autostart /home/pi/.config/lxsession/LXDE-pi/
 ```
 
-and add the following lines to /home/pi/.config/lxsession/LXDE-pi/autostart
+and add the following lines to **/home/pi/.config/lxsession/LXDE-pi/autostart**
 
 ```bash
 @lxpanel --profile LXDE-pi
@@ -72,12 +70,13 @@ and add the following lines to /home/pi/.config/lxsession/LXDE-pi/autostart
 
 ## IPS 80x160
 
-**Note:** This display has a CS pin so you should be able to control more than one simultaneously.
+***Note: This display has a CS pin so you should be able to control more than one simultaneously.***
 
 ![ISP 80x160](./main80x160-3.png)
 
 ### Additional Display Info
 
+***See Important Note about this display in above section IPS 240x240***
 * 1.3" 240x240 IPS / ST7789 Datasheet - google. I found these (not adding here as there are some disclaimers about redistribution): 
 https://cdn.shopify.com/s/files/1/2386/9605/files/st7789v-lcd-controller-73f8bc3e.pdf?4396108893874243991
 https://www.waveshare.com/wiki/File:ST7789_Datasheet.pdf
