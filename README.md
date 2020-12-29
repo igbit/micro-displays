@@ -82,3 +82,11 @@ https://www.waveshare.com/wiki/File:ST7789_Datasheet.pdf
 
 https://news.ycombinator.com/item?id=25566132
 
+### Connections
+
+ I will add a diagram once I have more time.
+ 
+ ![ISP 240x240](./main240x240-4.png)
+ ![ISP 240x240](./main240x240-5.png)
+ 
+ 
