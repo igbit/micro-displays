@@ -83,7 +83,7 @@ https://www.waveshare.com/wiki/File:ST7789_Datasheet.pdf
 
 * 0.96" 80x160 IPS / ST7735 Datasheet - same, google: https://www.displayfuture.com/Display/datasheet/controller/ST7735.pdf
 ![ISP 80x160](./main80x160-1.png)
-![ISP 80x160](./main80x160-3.png)
+![ISP 80x160](./main80x160-4.png)
 
 
 ### Discussion in HackerNews
