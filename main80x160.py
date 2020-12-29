@@ -206,7 +206,7 @@ def setResolution(w,h):
         displayWidthScaled = int(displayCols * xScale)
         
     if screenHeight != h:
-        screenHeight != h
+        screenHeight = h
         yScale = displayRowsHalf / h
         displayHeightScaled = int(displayRowsHalf * yScale)
     
