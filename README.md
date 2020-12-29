@@ -68,6 +68,10 @@ and add the following lines to /home/pi/.config/lxsession/LXDE-pi/autostart
 
 (you probably only need to add the last one)
 
+## IPS 80x160
+
+![ISP 80x160](./main80x160-3.png)
+
 ### Additional Display Info
 
 * 1.3" 240x240 IPS / ST7789 Datasheet - google. I found these (not adding here as there are some disclaimers about redistribution): 
@@ -77,6 +81,9 @@ https://www.waveshare.com/wiki/File:ST7789_Datasheet.pdf
 ![ISP 240x240](./main240x240-3.png)
 
 * 0.96" 80x160 IPS / ST7735 Datasheet - same, google: https://www.displayfuture.com/Display/datasheet/controller/ST7735.pdf
+![ISP 80x160](./main80x160-1.png)
+![ISP 80x160](./main80x160-2.png)
+
 
 ### Discussion in HackerNews
 
