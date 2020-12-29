@@ -22,9 +22,22 @@ $ pip3 install pyscreenshot
 $ sudo apt install python3-xlib
 ```
 
-### Raspberry Pi HDMI out
+### Testing
 
-You must force the Raspberry Pi to output HDMI even if a monitor is not connected.
+```bash
+pi@raspberrypi:~ $ git clone https://github.com/igbit/micro-displays.git
+Cloning into 'micro-displays'...
+remote: Enumerating objects: 37, done.
+remote: Counting objects: 100% (37/37), done.
+remote: Compressing objects: 100% (37/37), done.
+remote: Total 37 (delta 16), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (37/37), done.
+pi@raspberrypi:~ $ cd micro-displays/
+pi@raspberrypi:~/micro-displays $ python3 main240x240.py
+```
+### Using without a monitor
+
+When a monitor is not connected you must force the Raspberry Pi to output HDMI.
 
 In /boot/config.txt make sure the following lines are uncommented:
 
