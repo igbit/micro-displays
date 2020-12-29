@@ -7,6 +7,10 @@ The top half of the micro display shows the full screen and the bottom half is a
 
 ![ISP 240x240](./main240x240-1.png)
 
+Example of code editing using this set up :-)
+
+![ISP 240x240](./main240x240-2.png)
+
 ## IPS 240x240
 
 ### Dependencies
