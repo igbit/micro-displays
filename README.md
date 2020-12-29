@@ -57,7 +57,7 @@ To enable at session startup on reboot:
 pi@raspberrypi:~ $ cp /etc/xdg/lxsession/LXDE-pi/autostart /home/pi/.config/lxsession/LXDE-pi/
 ```
 
-and add the following lines
+and add the following lines to /home/pi/.config/lxsession/LXDE-pi/autostart
 
 ```bash
 @lxpanel --profile LXDE-pi
