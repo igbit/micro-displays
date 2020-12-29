@@ -67,3 +67,16 @@ and add the following lines
 ```
 
 (you probably only need to add the last one)
+
+### Additional Display Info
+
+* 1.3" 240x240 IPS / ST7789 Datasheet - google. I found these (not adding here as there are some disclaimers about redistribution): 
+https://cdn.shopify.com/s/files/1/2386/9605/files/st7789v-lcd-controller-73f8bc3e.pdf?4396108893874243991
+https://www.waveshare.com/wiki/File:ST7789_Datasheet.pdf
+
+* 0.96" 80x160 IPS / ST7735 Datasheet - same, google: https://www.displayfuture.com/Display/datasheet/controller/ST7735.pdf
+
+### Discussion in HackerNews
+
+https://news.ycombinator.com/item?id=25566132
+
