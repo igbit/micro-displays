@@ -60,9 +60,10 @@ pi@raspberrypi:~ $ cp /etc/xdg/lxsession/LXDE-pi/autostart /home/pi/.config/lxse
 and add the following lines
 
 ```bash
-pi@raspberrypi:~ $ cat /home/pi/.config/lxsession/LXDE-pi/autostart 
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @python3 /home/pi/micro-displays/main240x240.py 2>&1 >> /home/pi/micro-displays/stdout.log & 
 ```
+
+(you probably only need to add the last one)
