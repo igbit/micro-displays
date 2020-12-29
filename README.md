@@ -13,6 +13,8 @@ Example of code editing using this set up :-)
 
 ## IPS 240x240
 
+**Note** A question came up in HN about being able to control multiple tiny displays. I'm pasting my reply here as well as this may influence the type of display you want to buy for any similar projects. You should be able to control multiple SPI devices at the same time, but that requires the CSX/CS ("Chip Select") pin to be present. The 240x240 I bought don't seem to have this feature, but someone found a hack to enable it: https://www.instructables.com/Adding-CS-Pin-to-13-LCD/
+
 ### Dependencies
 
 Requires a couple of python libs:
@@ -69,6 +71,8 @@ and add the following lines to /home/pi/.config/lxsession/LXDE-pi/autostart
 (you probably only need to add the last one)
 
 ## IPS 80x160
+
+**Note** This display has a CS pin so you should be able to control more than one at the same time.
 
 ![ISP 80x160](./main80x160-3.png)
 
