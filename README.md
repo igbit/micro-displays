@@ -76,7 +76,7 @@ and add the following lines to **/home/pi/.config/lxsession/LXDE-pi/autostart**
 
 ### Additional Display Info
 
-***See Important Note about this display in above section IPS 240x240 ***
+***See Important Note about this display in above section IPS 240x240***
 * 1.3" 240x240 IPS / ST7789 Datasheet - google. I found these (not adding here as there are some disclaimers about redistribution): 
 https://cdn.shopify.com/s/files/1/2386/9605/files/st7789v-lcd-controller-73f8bc3e.pdf?4396108893874243991
 https://www.waveshare.com/wiki/File:ST7789_Datasheet.pdf
