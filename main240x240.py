@@ -90,9 +90,19 @@ def prepareToSpiWrite(x, y, width, height):
     initSpiWrite(0x2C) # RAMWR
 
 def writeImage(image, x, y, w, h):
-    pb = np.array(image.convert('RGB')).astype('uint16')
-    color = ((pb[:,:,0] & 0xF8) << 8) | ((pb[:,:,1] & 0xFC) << 3) | (pb[:,:,2] >> 3)
-    ba = np.dstack(((color >> 8) & 0xFF, color & 0xFF)).flatten().tolist()
+    # convert the image into a single numpy array in the format [R,G,B,R,G,B,...]
+    # where R, G and B are single bytes
+    rgb = np.array(image.convert('RGB')).astype('uint8')
+    # extract each color as its own array
+    r,g,b = rgb[:,:,0], rgb[:,:,1], rgb[:,:,2]
+    # compress 3 bytes RGB (8 bits red + 8 green + 8 blue) to
+    # 2 bytes (5 most significant bits (MSB) red + 6 MSB green + 5 MSB blue)
+    # i.e. rrrrrrrr gggggggg bbbbbbb in RGB565 is rrrrrggg gggbbbbb
+    rgb565byte0 = (r & 0xF8) | (g >> 5)        # rrrrrggg
+    rgb565byte1 = ((g & 0xFC) << 3) | (b >> 3) # gggbbbbb
+    # re-assemble all rgb565 bytes into one bytearray
+    ba = np.dstack((rgb565byte0,rgb565byte1)).flatten().tolist()
+    # write to display RAM
     prepareToSpiWrite(x, y, x + w - 1, y + h - 1)
     spiBufferWrite(ba)
     endSpiWrite()
