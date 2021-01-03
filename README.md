@@ -51,7 +51,7 @@ See also https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=243886#p1488488
 
 ### Start up on reboot
 
-To enable at session startup on reboot (you may need **mkdir /home/pi/.config/lxsession** and **mkdir /home/pi/.config/lxsession/LXDE-pi**):
+To enable at session startup on reboot (you may need **mkdir /home/pi/.config/lxsession** and **mkdir /home/pi/.config/lxsession/LXDE-pi** before the below cp):
 
 ```bash
 pi@raspberrypi:~ $ cp /etc/xdg/lxsession/LXDE-pi/autostart /home/pi/.config/lxsession/LXDE-pi/
