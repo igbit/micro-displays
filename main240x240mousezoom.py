@@ -144,7 +144,7 @@ def mouseRegionScreenshot():
     global screenWidth, screenHeight
     try:
         if screenWidth == 0:
-            #todo: probe this frequently to check whether used changed the resolution
+            #todo: probe this frequently to check whether user changed the resolution
             probeResolution = ImageGrab.grab()
             screenWidth, screenHeight = probeResolution.size
             
