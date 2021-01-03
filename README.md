@@ -11,6 +11,10 @@ Example of code editing using this set up :-)
 
 ![ISP 240x240](./main240x240-2.png)
 
+Version with zoom around the mouse area only:
+
+![ISP 240x240](./main240x240-7.png)
+
 ## IPS 240x240
 ***Important Note: A question came up in HN about being able to control multiple tiny displays. I'm pasting my reply here as well as this may influence the type of display you want to buy for similar projects. You should be able to control multiple SPI devices at the same time but that requires the CSX/CS ("Chip Select") pin to be present. The 240x240 displays I bought don't seem to have this feature (though someone found a non-trivial hack to enable them: https://www.instructables.com/Adding-CS-Pin-to-13-LCD/)***
 ### Dependencies
@@ -24,6 +28,8 @@ $ sudo apt install python3-xlib
 
 ### Testing
 
+Full screen + zoom:
+
 ```bash
 pi@raspberrypi:~ $ git clone https://github.com/igbit/micro-displays.git
 Cloning into 'micro-displays'...
@@ -35,6 +41,21 @@ Unpacking objects: 100% (37/37), done.
 pi@raspberrypi:~ $ cd micro-displays/
 pi@raspberrypi:~/micro-displays $ python3 main240x240.py
 ```
+
+Zoom around the mouse region only:
+
+```bash
+pi@raspberrypi:~ $ git clone https://github.com/igbit/micro-displays.git
+Cloning into 'micro-displays'...
+remote: Enumerating objects: 37, done.
+remote: Counting objects: 100% (37/37), done.
+remote: Compressing objects: 100% (37/37), done.
+remote: Total 37 (delta 16), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (37/37), done.
+pi@raspberrypi:~ $ cd micro-displays/
+pi@raspberrypi:~/micro-displays $ python3 main240x240mousezoon.py
+```
+
 ### Using without a monitor
 
 When a monitor is not connected you must force the Raspberry Pi to output HDMI.
@@ -67,6 +88,8 @@ and add the following lines to **/home/pi/.config/lxsession/LXDE-pi/autostart**
 ```
 
 (you probably only need to add the last one)
+
+Replace **main240x240.py** with **main240x240mousezoom.py** if you're only after a zoom around the mouse region.
 
 ## IPS 80x160
 
