@@ -166,7 +166,7 @@ def mouseRegionScreenshot():
         if upper < 0:
             mouseY = upper + DISPLAY_ROWS_HALF
             upper = 0
-            bottom = DISPLAY_COLS_HALF
+            bottom = DISPLAY_ROWS
         if right > screenWidth:
             mouseX = DISPLAY_COLS - (screenWidth-x1)
             right = screenWidth
