@@ -112,6 +112,7 @@ $ sudo apt install matchbox-keyboard
 ```
 
 ... accessible through the Accessories menu:
+
 ![RpiKeyboard](./rpi-matchbox-keyboard.png)
 
 
