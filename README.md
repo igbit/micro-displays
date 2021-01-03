@@ -74,7 +74,7 @@ and add the following lines to **/home/pi/.config/lxsession/LXDE-pi/autostart**
 
 ![ISP 80x160](./main80x160-3.png)
 
-### Additional Display Info
+## Additional Display Info
 
 ***See Important Note about this display in above section IPS 240x240***
 * 1.3" 240x240 IPS / ST7789 Datasheet - google. I found these (not adding here as there are some disclaimers about redistribution): 
@@ -87,25 +87,33 @@ https://www.waveshare.com/wiki/File:ST7789_Datasheet.pdf
 ![ISP 80x160](./main80x160-1.png) ![ISP 80x160](./main80x160-4.png)
 
 
-### Discussion in HackerNews
+## Discussion in HackerNews
 
 https://news.ycombinator.com/item?id=25566132
 
-### Connections
+## Connections
 
  I will add a diagram once I have more time.
  
  ![ISP 240x240](./main240x240-4.png)
  ![ISP 240x240](./main240x240-5.png)
  
- ### Additional Raspberry Pi Settings
+## Additional Raspberry Pi Settings
+### Enable SPI
+![RpiConfig](./rpi-config.png) 
+![RpiSpi](./rpi-spi.png)
  
- ## Enable SPI
- ![RpiConfig](./rpi-config.png) 
- ![RpiSpi](./rpi-spi.png)
- 
- 
- 
- 
+### Keyboard
+
+Someone asked for a keyboard. This one looks cool...
+
+```bash
+$ sudo apt install matchbox-keyboard
+```
+
+... accessible through the Accessories menu:
+![RpiKeyboard](./rpi-matchbox-keyboard.png)
+
+
  
  
