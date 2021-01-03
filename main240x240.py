@@ -90,7 +90,7 @@ def prepareToSpiWrite(x, y, width, height):
     initSpiWrite(0x2C) # RAMWR
 
 def writeImage(image, x, y, w, h):
-    # convert the image to a single numpy array in the format [R,G,B,R,G,B,...]
+    # convert the image into a single numpy array in the format [R,G,B,R,G,B,...]
     # where R, G and B are single bytes
     rgb = np.array(image.convert('RGB')).astype('uint8')
     # extract each color as its own array
