@@ -115,6 +115,10 @@ $ sudo apt install matchbox-keyboard
 
 ![RpiKeyboard](./rpi-matchbox-keyboard.png)
 
+## Raspberry Pi ZeroW
 
+It works... but as you can imagine it's *very* slow...
+
+![RpiZero](./rpi-zero.png)
  
  
