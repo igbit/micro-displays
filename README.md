@@ -15,7 +15,7 @@ Example of code editing using this set up :-)
 ***Important Note: A question came up in HN about being able to control multiple tiny displays. I'm pasting my reply here as well as this may influence the type of display you want to buy for similar projects. You should be able to control multiple SPI devices at the same time but that requires the CSX/CS ("Chip Select") pin to be present. The 240x240 displays I bought don't seem to have this feature (though someone found a non-trivial hack to enable them: https://www.instructables.com/Adding-CS-Pin-to-13-LCD/)***
 ### Dependencies
 
-Requires a couple of python libs:
+Requires a couple of python libs (see also below section **Additional Raspberry Pi Settings** as SPI must be enabled):
 
 ```bash
 $ pip3 install pyscreenshot
@@ -39,7 +39,7 @@ pi@raspberrypi:~/micro-displays $ python3 main240x240.py
 
 When a monitor is not connected you must force the Raspberry Pi to output HDMI.
 
-In /boot/config.txt make sure the following lines are uncommented:
+In /boot/config.txt make sure the following lines are uncommented (sudo vi /boot/config.txt and edit):
 
 ```bash
 max_framebuffers=2
@@ -51,7 +51,7 @@ See also https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=243886#p1488488
 
 ### Start up on reboot
 
-To enable at session startup on reboot:
+To enable at session startup on reboot (you may need **mkdir /home/pi/.config/lxsession** and **mkdir /home/pi/.config/lxsession/LXDE-pi** before the below cp):
 
 ```bash
 pi@raspberrypi:~ $ cp /etc/xdg/lxsession/LXDE-pi/autostart /home/pi/.config/lxsession/LXDE-pi/
@@ -74,7 +74,7 @@ and add the following lines to **/home/pi/.config/lxsession/LXDE-pi/autostart**
 
 ![ISP 80x160](./main80x160-3.png)
 
-### Additional Display Info
+## Additional Display Info
 
 ***See Important Note about this display in above section IPS 240x240***
 * 1.3" 240x240 IPS / ST7789 Datasheet - google. I found these (not adding here as there are some disclaimers about redistribution): 
@@ -87,15 +87,38 @@ https://www.waveshare.com/wiki/File:ST7789_Datasheet.pdf
 ![ISP 80x160](./main80x160-1.png) ![ISP 80x160](./main80x160-4.png)
 
 
-### Discussion in HackerNews
+## Discussion in HackerNews
 
 https://news.ycombinator.com/item?id=25566132
 
-### Connections
+## Connections
 
  I will add a diagram once I have more time.
  
  ![ISP 240x240](./main240x240-4.png)
  ![ISP 240x240](./main240x240-5.png)
+ 
+## Additional Raspberry Pi Settings
+### Enable SPI
+![RpiConfig](./rpi-config.png) 
+![RpiSpi](./rpi-spi.png)
+ 
+### Keyboard
+
+Someone asked for a keyboard. This one looks cool...
+
+```bash
+$ sudo apt install matchbox-keyboard
+```
+
+... accessible through the Accessories menu:
+
+![RpiKeyboard](./rpi-matchbox-keyboard.png)
+
+## Raspberry Pi ZeroW
+
+It works... but as you can imagine it's *very* slow...
+
+![RpiZero](./rpi-zero.png)
  
  
