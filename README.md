@@ -53,7 +53,7 @@ remote: Compressing objects: 100% (37/37), done.
 remote: Total 37 (delta 16), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (37/37), done.
 pi@raspberrypi:~ $ cd micro-displays/
-pi@raspberrypi:~/micro-displays $ python3 main240x240mousezoon.py
+pi@raspberrypi:~/micro-displays $ python3 main240x240mousezoom.py
 ```
 
 ### Using without a monitor
