@@ -70,9 +70,10 @@ def endSpiWrite():
     chipSelectPin.on() # end of tx
 
 def spiBufferWrite(ba):
-    for start in range(0, len(ba), 4096):
-        end = min(start + 4096, len(ba))
-        spiDevice.xfer(ba[start:end])
+    n = len(ba)
+    for i in range(0, n, 4096):
+        j = min(i + 4096, n)
+        spiDevice.xfer(ba[i:j])
 
 def spiWrite(command, params):
     initSpiWrite(command)
